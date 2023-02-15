@@ -1,0 +1,108 @@
+.banner{
+    width: 100%;
+    height: 300rpx;
+  }
+  /* banner图下image组件的样式 */
+  .banner  image{
+    width: 100%;
+    height: 100%;
+  }
+  .pro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0rpx;
+
+}
+
+.pro_all{
+    width: 98%;
+    height: 400rpx;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-between;
+    margin-top: 20rpx;
+    flex-wrap: wrap;
+ 
+
+}
+
+.pro_detail{
+    width: 43%;
+    height: 500rpx;
+    padding: 20rpx;
+    box-shadow: 5rpx 5rpx 10rpx #888888;
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30rpx;
+
+}
+.pro_img{
+    width: 100%;
+    height: 350rpx;
+    border-radius: 10rpx;
+}
+.pro_name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20rpx;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+   font-size: 30rpx;
+   text-overflow: ellipsis;
+}
+
+.pro_fun{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30rpx;
+}
+
+.grid{
+    border: true;
+}
+/* 搜索框样式 */
+.ser{
+    width: 90%;
+    margin-left: 5%;
+    height: 100rpx;
+    /* 距离轮播图组件距离 */
+    margin-top:15rpx;
+    border: 4rpx solid #A9A9A9;
+    /* 圆角 */
+
+  }
+  /* 搜索框图片 */
+.ser image{
+    width: 80rpx;
+    height: 80rpx;
+    /* 通过相对定位方式 */
+    position: relative;
+    top:-95rpx;
+    left: 580rpx;
+  }
+  .it{
+    width: 60%;
+    height: 100%;
+    line-height: 100%;
+    /* 文本距离边框位置 */
+    padding-left: 35rpx;
+    margin-left: 15rpx;
+    /* 字体颜色 */
+    color: #A9A9A9;
+    /* 字体的样式 */
+    font-family: '楷体';
+  
+  }

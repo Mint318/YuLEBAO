@@ -1,0 +1,4 @@
+/* pages/movie3/movie3.wxss */
+.video1{
+    width: 100%;
+}

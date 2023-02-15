@@ -1,0 +1,81 @@
+/* pages/play/play.wxss */
+/* 设置小程序背景 */
+.bg{
+  width: 100%;
+  height: 100%;
+}
+.bg image{
+  width: 100%;
+  height: 100%;
+  /* 透明度属性 */
+  opacity: 0.5;
+}
+/* 设置中间转盘 */
+.ct{
+  width: 400rpx;
+  height: 400rpx;
+  /* 绝对定位 */
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  /* 加一个边框 */
+  border: 40rpx solid #c5adae;
+  border-radius:50%;
+}
+.ct image{
+  width: 100%;
+  height: 100%;
+  /* 变成一个圆 */
+  border-radius:50%;
+  /* myPlay执行名称，5s代表一组的周期 linner 线性 infinite 无限次 */
+  animation: myPlay 5s linear infinite;
+}
+/* 要执行动画效果 */
+@keyframes myPlay{
+  /* form */
+  0%{
+    /* 动作行为：旋转 0度 */
+    transform: rotate(0deg);
+  }
+  /* to */
+  100%{
+    /* 动作行为：旋转 360 度 */
+    transform: rotate(360deg);
+  }
+}
+/* 底部按键控制样式 */
+.foot{
+  width: 80%;
+  height: 100rpx;
+  position: absolute;
+  top:85%;
+  left:15%;
+}
+.foot .one{
+  width: 30%;
+  height: 100%;
+  line-height: 100%;
+  float: left;
+}
+.foot .two{
+  width: 30%;
+  height: 100%;
+  line-height: 100%;
+  float: left;
+  margin-left: 5%;
+}
+.foot .three{
+  width: 30%;
+  height: 100%;
+  line-height: 100%;
+  margin-left: 5%;
+  float: left;
+}
+/* 控件样式 */
+.img{
+  width: 80rpx;
+  height: 80rpx;
+}

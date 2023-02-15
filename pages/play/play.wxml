@@ -1,0 +1,20 @@
+<!-- 整体页面背景图 -->
+<view class="bg">
+  <image src="{{song.musicImg}}"></image>
+</view>
+<!-- 设计中间转盘 -->
+<view class="ct">
+  <image src="{{song.musicImg}}"></image>
+</view>
+<!-- 设计底部音乐控制 -->
+<view class="foot">
+  <view class="one">
+    <image src="../../images/pre.png" class="img" bindtap="pre"></image>
+  </view>
+  <view class="two">
+    <image src="../../images/{{action}}.png" class="img"  bindtap="action" data-state="{{action}}"></image>
+  </view>
+  <view class="three">
+    <image src="../../images/next.png" class="img" bindtap="next"></image>
+  </view>
+</view>

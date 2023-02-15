@@ -1,0 +1,26 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="true" indicator-color="white" indicator-active-color="red" autoplay="true" interval="2000" duration="500" easing-function="easeInOutCubic" class="banner">
+  <swiper-item wx:for="{{banners}}" wx:key="id">
+    <image src="{{item.bannerUrl}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 搜索框 -->
+<view class="ser" style="width: 674rpx; height: 80rpx; display: block; box-sizing: border-box">
+  <input type="text" value="张杰" class="it" bindinput="getSerValue"/>
+  <image src="../../images/ser.png" bindtap="ser" style="position: relative; left: 580rpx; top: -81rpx"></image>
+</view>
+<!-- 默认展示音乐列表 -->
+<view class="list" wx:for="{{showSongs}}" wx:key="*this">
+   <view class="one">
+      <image src="{{item.musicImg}}" ></image>
+   </view>
+   <view class="two" style="width: 300rpx; height: 170rpx; display: block; box-sizing: border-box">
+      <text>
+          歌曲名：{{item.name}}\n 
+          歌手：{{item.singer}}
+      </text>
+   </view>
+   <view class="three">
+      <image src="../../images/play.png" bindtap="play" data-index="{{index}}"></image>
+   </view>
+</view>

@@ -1,0 +1,67 @@
+{
+    "pages": [
+        "pages/welcome/weclome",
+      "pages/music/music",
+      "pages/comic/comic",
+      "pages/novel/novel",
+      "pages/movie/movie",
+      "pages/myself/myself",
+      "pages/play/play",
+      "pages/movie1/movie1",
+      "pages/comic1/comic1",
+      "pages/comic2/comic2",
+      "pages/movie2/movie2",
+    "pages/movie3/movie3",
+    "pages/novel2/novel2",
+    "pages/novel3/novel3"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#B2D9D8",
+      "navigationBarTitleText": "娱乐宝",
+      "navigationBarTextStyle": "black",
+      "backgroundColor": "#FFFFFF",
+      "enablePullDownRefresh": true,
+      "backgroundTextStyle": "dark",
+      "onReachBottomDistance": 50
+    },
+    "tabBar": {
+      "backgroundColor": "#B2D9D8",
+      "color": "#2c2c2c",
+      "selectedColor": "#d81e06",
+      "borderStyle": "white",
+      "list": [{
+          "pagePath": "pages/music/music",
+          "text": "宫商角徵羽",
+          "iconPath": "images/music1.png",
+          "selectedIconPath": "images/music.png"
+        },
+        {
+          "pagePath": "pages/comic/comic",
+          "text": "哇咔咔漫画",
+          "iconPath": "images/comic1.png",
+          "selectedIconPath": "images/comic.png"
+        },
+        {
+          "pagePath": "pages/novel/novel",
+          "text": "金木水火土",
+          "iconPath": "images/novel1.png",
+          "selectedIconPath": "images/novel.png"
+        },
+        {
+          "pagePath": "pages/movie/movie",
+          "text": "贼好看电影",
+          "iconPath": "images/movie1.png",
+          "selectedIconPath": "images/movie.png"
+        },
+        {
+          "pagePath": "pages/myself/myself",
+          "text": "设置",
+          "iconPath": "images/myself1.png",
+          "selectedIconPath": "images/myself.png"
+        }
+      ],
+      "position": "bottom"
+    },
+   
+    "sitemapLocation": "sitemap.json"
+  }

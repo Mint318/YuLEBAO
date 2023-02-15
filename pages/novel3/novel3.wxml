@@ -1,0 +1,9 @@
+<!--pages/novel3/novel3.wxml-->
+<view class="view">
+{{pro_list}}
+</view>
+<view style="width: 300rpx; height: 500rpx;position: absolute; left: 260rpx;top: 350rpx;" bindtap="hiddon">
+</view>
+<view class="bottom"  hidden="{{hidden}}">
+<text class="left">上一章</text>
+<text class="right" style="width: 314rpx; height: 98rpx; display: block; box-sizing: border-box; position: relative; left: 30rpx; top: 1rpx">下一章</text></view>

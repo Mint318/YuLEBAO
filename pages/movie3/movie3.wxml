@@ -1,0 +1,8 @@
+<!--pages/movie3/movie3.wxml-->
+<video src="{{pro_list}}" autoplay="false" loop="true" class="video1"></video>
+
+<view >
+<text style="display: block; font-size: 50rpx; font-family: 隶书;">{{pro.title}}</text>
+<text style="display: block; color:yellowgreen;">{{pro.director}}</text>
+<text style="display: block; font-size: 25rpx;">{{pro.descs}}</text>
+</view>

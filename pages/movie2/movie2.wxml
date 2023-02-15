@@ -1,0 +1,21 @@
+<!--pages/movie2/movie2.wxml-->
+<view class="ser" style="width: 674rpx; height: 82rpx; display: block; box-sizing: border-box">
+  <input type="text" value="复仇者联盟" class="it" bindinput="getSerValue"/>
+  <image src="../../images/ser.png" bindtap="ser" style="position: relative; left: 578rpx; top: -81rpx"></image>
+</view>
+<!-- 默认展示音乐列表 -->
+
+<view class="list" wx:for="{{pro_list}}" wx:key="*this" style="background-color: #e6e6e6;">
+    <navigator class="pro_detail" url="../movie3/movie3?id={{item.videoId}}">
+   <view class="one">
+      <image src="{{item.cover}}"  style="width: 200rpx; height: 254rpx; display: inline-block; box-sizing: border-box"></image>
+   </view>
+   <view class="two" style="margin-bottom: 10rpx; color: black;">
+      <text style="display: block; width: 514rpx; height: 98rpx; box-sizing: border-box">
+          名称：{{item.title}}</text>
+          <text style="display: block; width: 514rpx; height: 64rpx; box-sizing: border-box">  分类：{{item.videoType}}  </text>
+          <text style="display: block; width: 472rpx; height: 42rpx; box-sizing: border-box">  时间：{{item.releaseTime}}  </text>
+    
+   </view>
+    </navigator>
+</view>

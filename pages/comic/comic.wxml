@@ -1,0 +1,26 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="true" indicator-color="white" indicator-active-color="red" autoplay="true" interval="2000" duration="500" easing-function="easeInOutCubic" class="banner">
+  <swiper-item wx:for="{{banners}}" wx:key="id">
+    <image src="{{item.bannerUrl}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 搜索 -->
+<view class="ser" style="width: 674rpx; height: 84rpx; display: block; box-sizing: border-box">
+  <input type="text" value="校园" class="it" bindinput="getSerValue"/>
+  <image src="../../images/ser.png" bindtap="ser" style="position: relative; left: 578rpx; top: -81rpx"></image>
+</view>
+<!-- 书籍列表 -->
+<view class="pro">
+    <van-divider contentPosition="center" style="width: 734rpx; margin-bottom: 10rpx; height: 72rpx; display: block; box-sizing: border-box">漫画</van-divider>
+    <view class="pro_all">
+        <block wx:for="{{pro_list}}" wx:key="index">
+            <navigator class="pro_detail" url="../comic1/comic1?id={{item.comicId}}">
+                <image src="{{item.cover}}" class="pro_img" style="width: 316rpx; height: 422rpx; display: block; box-sizing: border-box"></image>
+            <view class="pro_fun">
+            <view class="pro_price" style="color: red;font-size: large;"><text>{{item.title}}</text>
+           <text style="color: #888;font-size: 15px;margin-left: 15rpx;">{{item.author}}</text></view>
+           </view></navigator>
+
+        </block>
+    </view>
+</view>

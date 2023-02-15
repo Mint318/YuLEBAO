@@ -1,0 +1,32 @@
+
+<view style="width: 372rpx; height: 466rpx; display: block; box-sizing: border-box">
+    <image src="{{pro_list.cover}}" class="img" style="position: relative; left: 38rpx; top: 34rpx"></image>
+    </view>
+
+
+
+<view class="lay_clo_cen pad_20">
+<view class="lay_clo_cen pro_msg pad_20">
+    <view class="lay_row_sta">
+        <text style="font-family: 楷体;font-size:60rpx; padding-left: 30rpx;">{{pro_list.title}}</text></view>
+        <view class="lay_row_sta" style="margin-top: 10rpx;">
+            <text>{{pro_list.author}}</text>
+           </view>
+            <view class="lay_row_end">
+                <text style="font-size: 25rpx;color: #888;">{{pro_list.descs}}</text>
+                </view>
+    
+</view>
+
+
+<view class="lay_clo_cen pad_20 select_case" >
+    <block wx:for="{{pro_list.chapterList}}" wx:key="index">
+        <navigator class="pro_detail" url="../comic2/comic2?id={{item.chapterId}}" > <text class="pro_img_detail" mode="widthFix" style="display: block; width: 654rpx; height: 76rpx; box-sizing: border-box; line-height: 76rpx;background-color: #e6e6e6; margin-top: 15rpx;font-family: 黑体;">{{item.title}}</text></navigator>
+        </block>
+</view>
+
+ </view>
+
+
+
+

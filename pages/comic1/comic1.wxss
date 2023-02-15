@@ -1,0 +1,8 @@
+.img{
+    position: relative;
+    height: 400rpx;
+    width: 300rpx;
+    border-radius: 10rpx;
+    left: 40rpx;
+    top: 40rpx;
+}

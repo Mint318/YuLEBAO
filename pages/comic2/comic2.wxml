@@ -1,0 +1,6 @@
+<!--pages/comic2/comic2.wxml-->
+<view>
+    <block wx:for="{{pro_list}}" wx:key="index">
+        <image src="{{item}}" class="width:100%" mode="widthFix"></image>
+        </block>
+</view>
